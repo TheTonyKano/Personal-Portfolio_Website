@@ -12,8 +12,25 @@
     flex-direction: row;
 }
 
+.socials {
+    margin-top: 300px;
+    display: block;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(77, 76, 76, 0.788);
+}
+
+.LinkedIn {
+    padding-left: 60px;
+}
+
+.LinkedIn>img {
+    height: 120px;
+}
+
 .Github>img {
-    width: 200px;
+    height: 120px;
 }
 
 .index-nav-wrapper>.index-navbar>div {
@@ -255,4 +272,10 @@ h3 {
         height: 10%;
     }
     /* Footer Styling */
+}
+
+
+/* Footer Styling */
+
+
 }
