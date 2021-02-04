@@ -1,0 +1,281 @@
+/*Index Navigation Bar*/
+
+.index-nav-wrapper {
+    display: flex;
+    position: relative;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.index-navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    margin-top: 300px;
+    display: block;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(77, 76, 76, 0.788);
+}
+
+.LinkedIn {
+    padding-left: 60px;
+}
+
+.LinkedIn>img {
+    height: 120px;
+}
+
+.Github>img {
+    height: 120px;
+}
+
+.index-nav-wrapper>.index-navbar>div {
+    margin: 20px;
+    text-size-adjust: auto;
+    font-size: .9em;
+    text-transform: uppercase;
+    padding-left: 200px;
+}
+
+.index-navbar-links a {
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.index-navbar-links {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+}
+
+
+/*Navigation Bar not for Index page*/
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin-bottom: 20px;
+}
+
+.nav-wrapper>.left-side-navbar>div {
+    text-size-adjust: auto;
+    margin: 20px;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.navbar-links {
+    text-size-adjust: auto;
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+}
+
+.left-side-navbar {
+    display: flex;
+}
+
+.right-side-navbar {
+    display: flex;
+}
+
+
+/*Parallax Effect*/
+
+body,
+html {
+    text-size-adjust: auto;
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimgpara1,
+.bgimgpara-bio,
+.bgimgpara3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimgpara1 {
+    background-image: url("../Assets/pexels-elijah-o\'donnell-4173624.jpg");
+    min-height: 100%;
+}
+
+.bgimgpara3 {
+    background-image: url("../Assets/pexels-alex-andrews-1983038.jpg");
+    min-height: 100%;
+}
+
+.bgimgpara-bio {
+    background-image: url("../Assets/pexels-luis-gomes-546819.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    text-size-adjust: auto;
+    background-color: rgba(77, 76, 76, 0.788);
+    color: #fff;
+    padding: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.index-navbar-links {
+    text-align: center
+}
+
+p.border {
+    text-align: left;
+}
+
+.caption p.border,
+p.border,
+.index-nav-wrapper {
+    text-size-adjust: auto;
+    background-color: rgba(77, 76, 76, 0.788);
+    color: #fff;
+    padding: 18px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+.index-text {
+    text-size-adjust: auto;
+    background-color: #121212;
+    padding: 18px;
+    text-align: left;
+}
+
+h3 {
+    text-size-adjust: auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimgpara1,
+    .bgimgpara-bio,
+    .bgimgpara3 {
+        background-attachment: scroll;
+    }
+}
+
+
+/* Color Scheme : Dark/light mode */
+
+@media (prefers-color-scheme: dark) {
+    /* Header Styling */
+    .index-navbar-links a {
+        color: #00ffff;
+    }
+    .active-nav-link {
+        color: rgb(212, 212, 212) !important;
+        border-bottom: 2px solid rgb(212, 212, 212);
+    }
+    .index-nav-wrapper a {
+        color: rgb(212, 212, 212);
+        text-decoration: none;
+        transition: color .5s;
+    }
+    .nav-link-wrapper:hover {
+        border-bottom: 1px solid rgb(212, 212, 212);
+    }
+    .nav-link-wrapper a:hover {
+        color: red;
+    }
+    .nav-wrapper,
+    .footer-wrapper {
+        background-color: rgba(156, 15, 15, 0.616);
+    }
+    a {
+        color: aqua
+    }
+    /* Body Styling */
+    body {
+        color: rgb(212, 212, 212);
+    }
+    .main-wrapper {
+        color: rgb(212, 212, 212);
+        background-color: rgba(0, 0, 0, 0.801);
+    }
+    /* Footer Styling */
+}
+
+@media (prefers-color-scheme: light) {
+    /* Header Styling */
+    .index-navbar-links a {
+        color: #00ffff;
+    }
+    .active-nav-link {
+        border-bottom: 2px solid black;
+    }
+    .active-nav-link {
+        color: black !important;
+    }
+    .nav-wrapper a {
+        color: rgb(212, 212, 212);
+        text-decoration: none;
+        transition: color .5s;
+    }
+    .nav-link-wrapper:hover {
+        border-bottom: 1px solid black;
+    }
+    .nav-link-wrapper a:hover {
+        color: red;
+    }
+    a {
+        color: rgb(173, 99, 247)
+    }
+    .nav-wrapper,
+    .footer-wrapper {
+        background-color: rgba(156, 15, 15, 0.616);
+    }
+    /* Body Styling */
+    body {
+        background-color: rgba(182, 182, 182, 0.616);
+        color: black;
+    }
+    .main-wrapper {
+        color: black;
+        background-color: rgb(212, 212, 212);
+    }
+    .github-logo {
+        display: flex;
+        height: 10%;
+    }
+    /* Footer Styling */
+}
+
+
+/* Footer Styling */
+
+
+}
