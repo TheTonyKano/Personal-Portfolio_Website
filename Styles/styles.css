@@ -38,6 +38,7 @@
     text-size-adjust: auto;
     font-size: .9em;
     text-transform: uppercase;
+    padding-left: 200px;
 }
 
 .index-navbar-links a {
@@ -99,7 +100,6 @@ html {
 .bgimgpara-bio,
 .bgimgpara3 {
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -276,6 +276,3 @@ h3 {
 
 
 /* Footer Styling */
-
-
-}
